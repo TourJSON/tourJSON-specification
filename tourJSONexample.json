@@ -1,0 +1,339 @@
+{
+  "tour": {
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "xmlns:tourml": "http://tapintomuseums.org/TourML",
+    "xmlns:gml": "http://www.opengis.net/gml",
+    "xsi:schemaLocation": "http://tapintomuseums.org/TourML TourML.xsd",
+    "id": "org.imamuseum.tap.ToLiveForever",
+    "tourMetadata": {
+      "title": [
+        {
+          "lang": "en",
+          "text": "A sample TourML document"
+        },
+        {
+          "lang": "es",
+          "text": "Una muestra TourML documento"
+        }
+      ],
+      "description": [
+        {
+          "lang": "en",
+          "text": "This tour is meant to demonstrate proper usage of the TourML standard."
+        },
+        {
+          "lang": "es",
+          "text": "....."
+        }
+      ],
+      "author": "Indianapolis Museum of Art",
+      "rootStopRef": { "id": "stop-1" },
+      "appResource": [
+        {
+          "id": "app-icon",
+          "usage": "icon"
+        },
+        {
+          "id": "app-splash",
+          "usage": "splash"
+        }
+      ],
+      "propertySet": {
+        "property": {
+          "name": "google-analytics",
+          "text": "UA-123456"
+        }
+      }
+    },
+    "asset": [
+      {
+        "id": "img-1",
+        "source": {
+          "format": "image/png",
+          "lastModified": "2011-09-29T12:01:32",
+          "uri": "file:///images/ankh-ct.png"
+        }
+      },
+      {
+        "id": "icon-1",
+        "source": {
+          "format": "image/jpg",
+          "lastModified": "2011-09-29T12:01:32",
+          "uri": "file:///images/icon1.jpg"
+        }
+      },
+      {
+        "id": "caption-1",
+        "content": [
+          {
+            "lang": "en",
+            "lastModified": "2011-09-29T12:01:32",
+            "data": "This is a caption"
+          },
+          {
+            "lang": "es",
+            "lastModified": "2011-09-29T12:01:32",
+            "data": "Se trata de un título"
+          }
+        ]
+      },
+      {
+        "id": "vid-1",
+        "source": [
+          {
+            "format": "video/quicktime",
+            "lastModified": "2011-09-29T12:01:32",
+            "lang": "en",
+            "uri": "file:///videos/ankh-ct.mov",
+            "propertySet": {
+              "property": [
+                {
+                  "name": "duration",
+                  "text": "00:10:36"
+                },
+                {
+                  "name": "width",
+                  "text": "1920"
+                },
+                {
+                  "name": "height",
+                  "text": "1080"
+                }
+              ]
+            }
+          },
+          {
+            "format": "video/ogg-theora",
+            "lastModified": "2011-09-29T12:01:32",
+            "lang": "en",
+            "uri": "file:///videos/ankh-ct.ogg",
+            "propertySet": {
+              "property": [
+                {
+                  "name": "duration",
+                  "text": "00:10:32"
+                },
+                {
+                  "name": "width",
+                  "text": "1920"
+                },
+                {
+                  "name": "height",
+                  "text": "1280"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "geo-1",
+        "content": {
+          "format": "gml",
+          "lastModified": "2011-09-29T12:01:32",
+          "data": {
+            "gml:Point": {
+              "srsName": "EPSG:4326",
+              "gml:pos": "21.052 -10.854"
+            }
+          }
+        }
+      },
+      {
+        "id": "aud-1",
+        "source": [
+          {
+            "format": "audio/mp3",
+            "lastModified": "2011-09-29T12:01:32",
+            "lang": "en",
+            "uri": "./audio/abbot-interview-english.mp3"
+          },
+          {
+            "format": "audio/mp3",
+            "lastModified": "2011-09-29T12:01:32",
+            "lang": "es",
+            "uri": "./audio/abbot-interview-spanish.mp3"
+          }
+        ]
+      },
+      {
+        "id": "www-1",
+        "source": {
+          "format": "text/html",
+          "uri": "http://en.wikipedia.org/wiki/Mummy"
+        }
+      },
+      {
+        "id": "obj-1",
+        "source": {
+          "format": "text/xml",
+          "lastModified": "2011-09-29T12:01:32",
+          "uri": "file:///objects.xml"
+        }
+      },
+      {
+        "id": "app-icon",
+        "source": {
+          "format": "image/jpg",
+          "lastModified": "2011-09-29T12:01:32",
+          "uri": "file:///images/app-icon.jpg"
+        }
+      },
+      {
+        "id": "app-splash",
+        "source": {
+          "format": "image/jpg",
+          "lastModified": "2011-09-29T12:01:32",
+          "uri": "file:///images/app-splash.jpg"
+        }
+      }
+    ],
+    "stop": [
+      {
+        "id": "stop-1",
+        "view": "stopGroup",
+        "title": [
+          {
+            "lang": "en",
+            "text": "Ankhaman's remains"
+          },
+          {
+            "lang": "es",
+            "text": "remainos Ankhaman's"
+          }
+        ],
+        "description": [
+          {
+            "lang": "en",
+            "text": "Ankhaman's remains"
+          },
+          {
+            "lang": "es",
+            "text": "remainos Ankhaman's"
+          }
+        ],
+        "propertySet": {
+          "property": {
+            "name": "code",
+            "text": "100"
+          }
+        }
+      },
+      {
+        "id": "stop-2",
+        "view": "ImageStop",
+        "title": {
+          "lang": "en",
+          "text": "CT imagery of the mummy"
+        },
+        "assetRef": [
+          {
+            "id": "img-1",
+            "usage": "primary"
+          },
+          {
+            "id": "icon-1",
+            "usage": "icon"
+          },
+          {
+            "id": "caption-1",
+            "usage": "caption"
+          }
+        ],
+        "propertySet": {
+          "property": {
+            "name": "code",
+            "text": "200"
+          }
+        }
+      },
+      {
+        "id": "stop-3",
+        "view": "VideoStop",
+        "title": "How do you give a mummy a CT scan?",
+        "assetRef": {
+          "id": "vid-1",
+          "usage": "primary"
+        },
+        "propertySet": {
+          "property": {
+            "name": "autoplay",
+            "type": "boolean",
+            "text": "true"
+          }
+        }
+      },
+      {
+        "id": "stop-4",
+        "view": "AudioStop",
+        "title": "Dr. Abbot's observations",
+        "assetRef": {
+          "id": "aud-1",
+          "usage": "primary"
+        },
+        "propertySet": {
+          "property": {
+            "name": "autoplay",
+            "type": "boolean",
+            "text": "true"
+          }
+        }
+      },
+      {
+        "id": "stop-5",
+        "view": "WebStop",
+        "title": {
+          "lang": "en",
+          "text": "Learn about mummies on Wikipedia"
+        },
+        "assetRef": {
+          "id": "web-1",
+          "usage": "primary"
+        },
+        "propertySet": {
+          "property": {
+            "name": "code",
+            "text": "300"
+          }
+        }
+      },
+      {
+        "id": "stop-6",
+        "view": "ObjectStop",
+        "title": {
+          "lang": "en",
+          "text": "Explore the object you are standing by"
+        },
+        "assetRef": { "id": "obj-1" },
+        "propertySet": {
+          "property": {
+            "name": "code",
+            "text": "400"
+          }
+        }
+      },
+      {
+        "id": "stop-7",
+        "view": "GeoStop",
+        "title": {
+          "lang": "en",
+          "text": "See where this mummy was discovered"
+        },
+        "assetRef": { "id": "geo-1" }
+      }
+    ],
+    "connection": [
+      {
+        "srcId": "stop-1",
+        "destId": "stop-3",
+        "priority": "0"
+      },
+      {
+        "srcId": "stop-1",
+        "destId": "stop-4",
+        "priority": "1"
+      }
+    ]
+  }
+}
