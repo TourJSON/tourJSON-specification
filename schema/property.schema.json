@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://the-tourjson-github-host/property.schema.json",
+  "title": "property",
+  "description": "A generic property string",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "Name of the property",
+      "type": "string"
+    },
+    "lang": {
+      "description": "Language of the property",
+      "type": "string"
+    },
+    "value": {
+      "description": "Value of the property",
+      "type": "string"
+    }
+  },
+  "required": [ "name" ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://the-tourjson-github-host/connection.schema.json",
+  "title": "connection",
+  "description": "A relationship between two stops",
+  "type": "object",
+  "properties": {
+    "srcId": {
+      "description": "ID of stop",
+      "type": "string"
+    },
+    "destId": {
+      "description": "ID of related stop",
+      "type": "string"
+    },
+    "priority": {
+      "description": "Priority of connection",
+      "type": "float"
+    },
+    "usage": {
+      "description": "usage of connection",
+      "type": "string"
+    }
+  },
+  "required": [ "srcId", "destId" ]
+}

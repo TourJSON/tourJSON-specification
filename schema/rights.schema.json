@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://the-tourjson-github-host/rights.schema.json",
+  "title": "rights",
+  "description": "Property defining legal usage",
+  "type": "object",
+  "properties": {
+    "copyright": {
+      "description": "A display string for a copyright.",
+      "type": "string"
+    },
+    "creditLine": {
+      "description": "A simple credit line string",
+      "type": "string"
+    },
+    "expiration": {
+      "description": "When the copyright expires",
+      "type": "string"
+    },
+    "reference": {
+      "description": "A uri to details regarding rights",
+      "format": "uri-template",
+      "type": "string"
+    },
+  },
+}

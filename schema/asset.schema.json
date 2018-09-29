@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://the-tourjson-github-host/asset.schema.json",
+  "title": "asset",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier of the asset",
+      "type": "string"
+    },
+    "type": {
+      "description": "The type of stop",
+      "type": "string"
+    },
+    "source": {
+      "description": "The source of the content. This or the content poperty is required.",
+      "type": "array",
+      "items": { "$ref": "http://the-tourjson-github-host/assetSource.schema.json" }
+    },
+    "content": {
+      "description": "The content of the asset. This or the source poperty is required.",
+      "type": "array",
+      "items": { "$ref": "http://the-tourjson-github-host/assetContent.schema.json" }
+    },
+    "properties": {
+      "description": "Set of additional properties",
+      "type": "array",
+      "items": { "$ref": "http://the-tourjson-github-host/property.schema.json" }
+    }
+  },
+  "required": [ "id" ],
+  "oneOf": [
+    { "required": [ "source" ] },
+    { "required": [ "content" ] },
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://the-tourjson-github-host/tourMetadata.schema.json",
+  "title": "tourMetadata",
+  "description": "The Metadata of the tour",
+  "type": "object",
+  "properties": {
+    "titles": {
+      "description": "Title of the tour",
+      "type": "array",
+      "items": { "$ref": "http://the-tourjson-github-host/title.schema.json" }
+    },
+    "descriptions": {
+      "description": "Descriptions of the tour",
+      "type": "array",
+      "items": { "$ref": "http://the-tourjson-github-host/description.schema.json" }
+    },
+    "authors": {
+      "description": "Set of tour authors",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "rootStopRef": { // TODO: maybe make stopRef
+      "description": "ID of the first stop on the tour. This is useful for tours that have a well-defined starting point.",
+      "type": "string"
+    },
+    "appResources": {
+      "properties": {
+        "description": "Set of application wide resources and its usage. This could be used for the application icon and splash image for example.",
+        "type": "array",
+        "items": { "$ref": "http://the-tourjson-github-host/assetRefType.schema.json" }
+      }
+    },
+    "properties": {
+      "description": "Set of additional properties",
+      "type": "array",
+      "items": { "$ref": "http://the-tourjson-github-host/property.schema.json" }
+    }
+  }
+}

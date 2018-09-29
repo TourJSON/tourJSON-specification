@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://the-tourjson-github-host/title.schema.json",
+  "title": "title",
+  "description": "A type for providing localized titles",
+  "type": "object",
+  "properties": {
+    "value": {
+      "description": "Value of the title",
+      "type": "string"
+    },
+    "lang": {
+      "description": "Language of the title",
+      "type": "string"
+    }
+  },
+  "required": [ "value" ]
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://the-tourjson-github-host/stop.schema.json",
+  "title": "stop",
+  "description": "A stop along the tour",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier of the stop",
+      "type": "string"
+    },
+    "view": {
+      "description": "The type of stop",
+      "type": "string"
+    },
+    "titles": {
+      "description": "The title of the stop",
+      "type": "array",
+      "items": { "$ref": "http://the-tourjson-github-host/title.schema.json" }
+    },
+    "descriptions": {
+      "description": "The description of the stop",
+      "type": "array",
+      "items": { "$ref": "http://the-tourjson-github-host/description.schema.json" }
+    },
+    "assetRef": {
+      "description": "",
+      "$ref": "http://the-tourjson-github-host/assetRef.schema.json"
+    },
+    "properties": {
+      "description": "Set of additional properties",
+      "type": "array",
+      "items": { "$ref": "http://the-tourjson-github-host/property.schema.json" }
+    }
+  },
+  "required": [ "id", "view" ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://the-tourjson-github-host/description.schema.json",
+  "title": "description",
+  "description": "A type for providing localized descriptions",
+  "type": "object",
+  "properties": {
+    "value": {
+      "description": "Value of the description",
+      "type": "string"
+    },
+    "lang": {
+      "description": "Language of the description",
+      "type": "string"
+    }
+  },
+  "required": [ "value" ]
+}

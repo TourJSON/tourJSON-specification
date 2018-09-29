@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://the-tourjson-github-host/tour.schema.json",
+  "title": "tour",
+  "description": "The Tour element is used to describe all content related to a tour.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier of the tour",
+      "type": "string"
+    },
+    "lastModified": {
+      "description": "Time when tour was last modified",
+      "format": "date-time",
+      "type": "string"
+    }
+  },
+  "required": [ "id" ]
+}

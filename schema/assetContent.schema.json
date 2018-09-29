@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://the-tourjson-github-host/assetContent.schema.json",
+  "title": "assetContent",
+  "description": "Content of an asset",
+  "type": "object",
+  "properties": {
+    "data": {
+      "description": "data of the asset. This can be of any type",
+      "type": [ "integer", "string", "float", "boolean", "null", "array", "object" ]
+    },
+    "rights": {
+      "description": "Unique identifier of the asset",
+      "$ref": "http://the-tourjson-github-host/rights.schema.json"
+    },
+    "properties": {
+      "description": "Set of additional properties",
+      "type": "array",
+      "items": { "$ref": "http://the-tourjson-github-host/property.schema.json" }
+    },
+    "lang": {
+      "description": "The language of the source",
+      "type": "string"
+    },
+    "format": {
+      "description": "The format of the source",
+      "type": "string"
+    },
+    "part": {
+      "description": "The part of the source",
+      "type": "string"
+    },
+    "lastModified": {
+      "description": "Time when tour was last modified",
+      "format": "date-time",
+      "type": "string"
+    }
+  },
+  "required": [ "data" ],
+}
